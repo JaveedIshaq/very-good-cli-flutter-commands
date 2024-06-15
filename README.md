@@ -34,3 +34,25 @@ minSdkVersion 21
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE"/>
 ```
+
+# update the following in AndroidManifest.xml
+`
+ android:enableOnBackInvokedCallback="true"
+ android:requestLegacyExternalStorage="true"
+`
+in
+
+```
+   <application
+        android:label="${appName}"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher"
+        android:enableOnBackInvokedCallback="true"
+        android:requestLegacyExternalStorage="true">
+```
+
+<code>
+   android:enableOnBackInvokedCallback="true": This property enables the onBackInvoked callback for the application. It means that when the user presses the back button, the application can handle the back navigation event.
+   android:requestLegacyExternalStorage="true": This property requests legacy external storage access for the application. It allows the application to access external storage, such as SD cards, directly instead of using the modern storage system. Note that this property is 
+    deprecated in newer versions of Android and it is recommended to use the modern storage system instead.
+</code>
