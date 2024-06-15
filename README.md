@@ -38,8 +38,10 @@ minSdkVersion 21
 # update the following in AndroidManifest.xml
 `
  android:enableOnBackInvokedCallback="true"
+ `
+ `
  android:requestLegacyExternalStorage="true"
-`
+ `
 in
 
 ```
