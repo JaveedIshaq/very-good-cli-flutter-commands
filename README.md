@@ -17,6 +17,12 @@ synthetic-package: false
 
 # Android Setup
 
+# update in app/build.gradle
+```
+compileSdkVersion 34
+ minSdkVersion 21
+``
+
 ## Add any of Required permissions for Android
 ```
    <uses-permission android:name="android.permission.INTERNET" />
