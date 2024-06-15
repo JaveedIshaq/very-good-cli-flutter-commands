@@ -3,7 +3,6 @@
 very_good create flutter_app flutter_instagram_clone --org "com.farabicoders" --application-id "com.farabicoders.flutter_instagram_cone"
 ```
 
-# add these 2 values inside
 # run flutter gen-l10n command to create loacalizations
 ```
 flutter gen-l10n
