@@ -53,8 +53,8 @@ in
         android:requestLegacyExternalStorage="true">
 ```
 
-<code>
+<pre>
    android:enableOnBackInvokedCallback="true": This property enables the onBackInvoked callback for the application. It means that when the user presses the back button, the application can handle the back navigation event.
    android:requestLegacyExternalStorage="true": This property requests legacy external storage access for the application. It allows the application to access external storage, such as SD cards, directly instead of using the modern storage system. Note that this property is 
     deprecated in newer versions of Android and it is recommended to use the modern storage system instead.
-</code>
+</pre>
