@@ -35,6 +35,8 @@ minSdkVersion 21
     <uses-permission android:name="android.permission.VIBRATE"/>
 ```
 
+
+
 # update the following in AndroidManifest.xml
 `
  android:enableOnBackInvokedCallback="true"
@@ -87,4 +89,10 @@ in
                 <action android:name="FLUTTER_NOTIFICATION_CLICK" /> 
                 <category android:name="android.intent.category.DEFAULT" /> 
             </intent-filter>
+```
+
+## very_good packages get --recursive
+
+```
+To recursively get dependencies for all packages in a Dart/Flutter monorepo using the Very Good CLI, you can use the very_good packages get --recursive command. This command automatically traverses through your project directory and runs flutter pub get for each package it finds.
 ```
